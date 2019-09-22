@@ -4,7 +4,9 @@
   "description": "API for Sugar Watch application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "test": "mocha **/*.spec.js --recursively",
+    "test-watch": "mocha **/*.spec.js --recursively --watch"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,10 @@
   "author": "kozyriev",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.19.2"
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "sinon": "^7.4.2"
   },
   "dependencies": {
     "express": "^4.17.1"
